@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row logos">
+    <h3>Select a game</h3>
+    <div class="col-md-6">
+      <img class="logo SSB" data-game="SSB" ng-click="getGame($event)" src="./img/SSBLogo.png"><br>
+      Super Smash Bros
+    </div>
+    <div class="col-md-6">
+      <img class="logo OW" data-game="OW" ng-click="getGame($event)" src="./img/OWLogo.png"><br>
+      Overwatch
+    </div>
+    <div class="col-md-6">
+      <img class="logo MK" data-game="MK" ng-click="getGame($event)" src="./img/MKLogo.png"><br>
+      Mortal Kombat
+    </div>
+    <div class="col-md-6">
+      <img class="logo DOTA" data-game="DOTA" ng-click="getGame($event)" src="./img/DOTA2Logo.png"><br>
+      DotA 2
+    </div>
+  </div>
+  <div class="row players">
+  Player name: 
+    <input class="playerName" type="text">
+    <input class="addPlayer playerButton" type="submit" value="+" ng-click="addPlayer()">
+    <h3>PLAYERS LIST!</h3>
+    <ol class="playersList">
+    </ol>
+    <button class="playerButton" ng-click="clearList()">Clear List</button>
+    <button class="playerButton" ng-click="start()">Let's go</button>
+  </div>
+</div>

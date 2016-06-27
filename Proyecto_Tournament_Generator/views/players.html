@@ -1,0 +1,26 @@
+<div class="container fighting">
+	<div class="row">
+		<div class="col-md-1">
+		</div>
+		<div class="col-md-4">
+			<h3>{{player1}}</h3>
+		</div>
+		<div class="col-md-2">
+			<img class="vs" src="./img/vs.png">
+		</div>
+		<div class="col-md-4">
+			<h3>{{player2}}</h3>
+		</div>
+		<div class="col-md-1">
+		</div>
+	</div>
+	<div class="row endBattle">
+	Victory: <select class="result">
+				<option> </option> 
+				<option>{{player1}}</option>
+				<option>{{player2}}</option>
+	</select>
+	<br>
+	<button class="playerButton" ng-click="submit()">Submit</button>
+	</div>
+</div>
